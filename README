@@ -1,5 +1,71 @@
-Real-Time Speech Recognition App (Android + Vosk Backend)
+# Speech Recognition App using Android + FastAPI + Vosk
 
-This project is a real-time speech-to-text mobile application powered by an offline backend using the Vosk speech recognition engine and "FastAPI + WebSocket". It captures your voice from an Android app, streams audio to a Python backend, and displays live transcription results.
+This is a real-time offline speech-to-text application that uses:
+- An Android client app for recording and live streaming
+- A Python backend using FastAPI and Vosk to perform transcription
 
+The app allows you to:
+Record voice  
+Stream audio to backend  
+See live transcription  
+Save transcript + audio  
+Replay recordings  
+View all previous recordings
+
+
+##  Project Structure
+
+
+## Tech Stack
+
+| Component | Technology     |
+|-----------|----------------|
+| Backend   | Python, FastAPI, Vosk, WebSocket |
+| Frontend  | Android (Java), OkHttp, AudioRecord |
+| Protocol  | WebSocket (for real-time communication) |
+| Audio     | PCM streaming + 3GP recording on device |
+
+
+# Android App Setup
+# Prerequisites
+Android Studio (API 30+ emulator with microphone support)
+
+Java 8+
+
+Internet permission (only for local IP-based connection)
+
+# How to Run
+Open SpeechRecognitionApp/ in Android Studio.
+Make sure you use an emulator with Google APIs + Microphone access enabled.
+Run the app on emulator or physical device.
+Click "Start" to stream speech.
+Click "Stop" to stop and save transcript and audio with a filename.
+Use “Previous” to view, replay, or delete past transcripts and recordings.
+
+# Backend Server Setup (FastAPI + Vosk)
+# Prerequisites
+Python 3.8+
+Git
+Vosk Model (e.g. vosk-model-small-en-us-0.15)
+
+# Clone this Repo
+git clone https://github.com/sudhagarkv/Speech-Recognition-AppwithServer.git
+cd Speech-Recognition-AppwithServer/speech-recognition
+
+# Install Requirements
+pip install -r requirements.txt
+
+# Download & Place Vosk Model
+Download from Vosk Models - https://alphacephei.com/vosk/models
+Extract and rename: speech-recognition/model/
+
+# Start Backend Server
+Open PowerShell and run:
+Navigate to your path main.py and run
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+# Make sure:
+Your IP (e.g., 192.168.x.x) is reachable from Android emulator
+
+Your Android app WS_URL matches: private static final String WS_URL = "ws://<your-ip>:8000/ws/speech";
 
