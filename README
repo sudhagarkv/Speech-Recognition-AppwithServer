@@ -1,0 +1,5 @@
+Real-Time Speech Recognition App (Android + Vosk Backend)
+
+This project is a real-time speech-to-text mobile application powered by an offline backend using the Vosk speech recognition engine and "FastAPI + WebSocket". It captures your voice from an Android app, streams audio to a Python backend, and displays live transcription results.
+
+

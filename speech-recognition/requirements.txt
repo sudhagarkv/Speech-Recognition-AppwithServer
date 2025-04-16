@@ -1,0 +1,5 @@
+fastapi==0.95.2
+uvicorn==0.22.0
+vosk==0.3.45
+websockets==11.0.3
+numpy==1.24.3

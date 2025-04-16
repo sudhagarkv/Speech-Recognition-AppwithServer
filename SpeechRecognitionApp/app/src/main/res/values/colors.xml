@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="md_theme_light_primary">#00897B</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_secondary">#3949AB</color>
+    <color name="md_theme_light_background">#F9F9F9</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#004D40</color>
+    <color name="md_theme_dark_onPrimary">#FFFFFF</color>
+    <color name="md_theme_dark_secondary">#1A237E</color>
+    <color name="md_theme_dark_background">#121212</color>
+</resources>

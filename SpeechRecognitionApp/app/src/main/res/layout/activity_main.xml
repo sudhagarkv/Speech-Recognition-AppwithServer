@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_transcription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="8dp"/>
+    </ScrollView>
+
+    <Button android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Speaking"
+        android:layout_marginTop="12dp"/>
+
+    <Button android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginTop="8dp"/>
+
+    <Button android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Audio"
+        android:layout_marginTop="8dp"/>
+
+    <Button android:id="@+id/btn_stop_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Audio"
+        android:layout_marginTop="8dp"/>
+
+    <Button android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Transcript"
+        android:layout_marginTop="8dp"/>
+
+    <Button android:id="@+id/btn_previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Previous Recordings"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
